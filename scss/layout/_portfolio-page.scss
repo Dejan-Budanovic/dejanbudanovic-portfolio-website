@@ -1,0 +1,70 @@
+@use "../util" as u;
+
+.portfolio-page__section {
+  padding: u.rem(120) 0 u.rem(50);
+  h2 {
+    font-size: clamp(u.rem(30), 8vw, u.rem(150));
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 0 u.rem(50) u.rem(30);
+  }
+  .portfolio-wrapper {
+    border-top: 2px solid var(--beige);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: u.rem(40);
+    padding: u.rem(60) u.rem(50);
+    .portfolio-page__article {
+      margin-bottom: u.rem(40);
+      .portfolio-page__article--img-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        aspect-ratio: 16 / 10;
+        img {
+          transition: scale ease-out 1s;
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 30px;
+          background: linear-gradient(
+            to bottom,
+            rgba(183, 0, 255, 0.133) 10%,
+            #290a5480 65%
+          );
+          opacity: 0;
+          transition: opacity ease 0.5s;
+        }
+      }
+      &:hover .portfolio-page__article--img-wrapper {
+        img {
+          scale: 105%;
+        }
+        .overlay {
+          opacity: 1;
+        }
+      }
+      h3 {
+        font-size: clamp(u.rem(30), 2.5vw, u.rem(150));
+        font-style: italic;
+        margin: u.rem(20) 0;
+        padding-left: u.rem(10);
+      }
+      p {
+        padding-left: u.rem(10);
+      }
+    }
+  }
+}
+
+@include u.breakpoint-down(small) {
+  .portfolio-page__section {
+    .portfolio-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

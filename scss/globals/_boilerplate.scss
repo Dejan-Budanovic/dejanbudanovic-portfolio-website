@@ -1,0 +1,40 @@
+@use "../util" as u;
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: u.$font-main;
+  background-color: var(--dark-blue);
+  color: var(--beige);
+}
+.scroll-hidden {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0 u.rem(50);
+}
+
+#home .main-nav__home,
+.about .main-nav__about,
+.contact .main-nav__contact,
+#portfolio .main-nav__portfolio {
+  color: var(--lime-green);
+}

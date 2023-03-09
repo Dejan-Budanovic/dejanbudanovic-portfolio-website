@@ -1,0 +1,96 @@
+@use "../util" as u;
+
+.main-footer {
+  position: relative;
+  border-top: 2px solid var(--beige);
+  display: flex;
+  flex-direction: column;
+  gap: u.rem(100);
+  padding: u.rem(50) u.rem(50) u.rem(20);
+  transition: ease-in-out 0.3s;
+  .main-footer__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    small {
+      text-align: center;
+      a {
+        text-decoration: underline;
+      }
+    }
+    .main-footer__bottom--back-to-top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      button {
+        background-color: transparent;
+        color: var(--beige);
+        text-transform: uppercase;
+        font-size: u.rem(15);
+        border: none;
+        transition: ease-in-out 0.3s;
+        cursor: pointer;
+        &:hover {
+          color: var(--lime-green);
+        }
+      }
+      img {
+        margin-right: u.rem(-10);
+        // border: 1px solid red;
+        width: u.rem(40);
+        filter: invert(92%) sepia(16%) saturate(3382%) hue-rotate(18deg)
+          brightness(107%) contrast(104%);
+      }
+    }
+  }
+  #back-to-top--btn {
+    //display: none;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    right: u.rem(20);
+    bottom: u.rem(50);
+    background: var(--dark-blue);
+    border: 1px solid var(--beige);
+    border-radius: u.rem(5);
+    width: u.rem(50);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    img {
+      height: u.rem(50);
+      filter: brightness(0) saturate(100%) invert(84%) sepia(3%) saturate(994%)
+        hue-rotate(324deg) brightness(120%) contrast(93%);
+    }
+    &:hover {
+      border-color: var(--lime-green);
+      img {
+        filter: invert(92%) sepia(16%) saturate(3382%) hue-rotate(18deg)
+          brightness(107%) contrast(104%);
+      }
+    }
+  }
+}
+
+@include u.breakpoint-down(small) {
+  .main-footer {
+    gap: u.rem(20);
+    .main-footer__navigation {
+      flex-direction: column;
+      align-items: center;
+      gap: u.rem(30);
+    }
+    .main-footer__bottom {
+      flex-direction: column-reverse;
+      gap: u.rem(50);
+      .main-footer__bottom--back-to-top {
+        button {
+          margin-right: u.rem(15);
+        }
+      }
+    }
+  }
+}

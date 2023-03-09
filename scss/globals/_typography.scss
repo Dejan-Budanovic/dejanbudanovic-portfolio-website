@@ -1,0 +1,39 @@
+@use "../util/" as u;
+/*logo montserrat 20px b
+
+20 r
+
+name -||- 135 px b i
+
+20 r
+
+portfolio -||- 50 px b i
+
+number 50 b i
+vertical 15 px*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: u.$font-main;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-family: u.$font-main;
+  font-weight: 400;
+}
+
+a {
+  color: var(--beige);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    color: var(--lime-green);
+  }
+}

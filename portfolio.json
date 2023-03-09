@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "/img/desktop/loopstudios-desktop-preview",
+    "imgSrcMobile": "/img/mobile/loopstudios-mobile-preview",
+    "productTitle": "loopstudios",
+    "productDescriptionShort": "Game studio website landing page",
+    "productDescriptionLong": "Loopstudio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/loopstudios",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2022
+  },
+  {
+    "id": 2,
+    "imgSrc": "/img/desktop/shop-desktop-preview",
+    "imgSrcMobile": "/img/mobile/shop-mobile-preview",
+    "productTitle": "Shop",
+    "productDescriptionShort": "shop Website",
+    "productDescriptionLong": " shop Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/shop",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2022
+  },
+  {
+    "id": 3,
+    "imgSrc": "/img/desktop/travel-desktop-preview",
+    "imgSrcMobile": "/img/mobile/travel-mobile-preview",
+    "productTitle": "Travel",
+    "productDescriptionShort": "Travel Company Website",
+    "productDescriptionLong": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/travel",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2022
+  },
+  {
+    "id": 4,
+    "imgSrc": "/img/desktop/nft-desktop-preview",
+    "imgSrcMobile": "/img/mobile/nft-mobile-preview",
+    "productTitle": "nft component card",
+    "productDescriptionShort": "component card for nft",
+    "productDescriptionLong": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/nft",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2022
+  },
+  {
+    "id": 5,
+    "imgSrc": "/img/desktop/order-desktop-preview",
+    "imgSrcMobile": "/img/mobile/order-mobile-preview",
+    "productTitle": "order component card",
+    "productDescriptionShort": "component card for nft",
+    "productDescriptionLong": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/order",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2022
+  },
+  {
+    "id": 6,
+    "imgSrc": "/img/desktop/maker-desktop-preview",
+    "imgSrcMobile": "/img/mobile/maker-mobile-preview",
+    "productTitle": "Maker",
+    "productDescriptionShort": "Maker prelaunch website",
+    "productDescriptionLong": " shop Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores expedita adipisci similique ipsum molestiae, quaerat reiciendis! Hic eius sit natus quam incidunt exercitationem officia libero, aut iure? Aspernatur vel laborum explicabo et, ratione ex atque odit eius, voluptate exercitationem tempora blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?",
+    "productLink": "/maker",
+    "productGitHubLink": "https://github.com/Dejan-Budanovic/Loopstudios-landing-page",
+    "year": 2023
+  }
+]

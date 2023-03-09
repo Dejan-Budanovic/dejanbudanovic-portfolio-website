@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejan Budanovic | Home</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body id="home">
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header-container">
+          <h1 id="logo"><a class="main-nav__home" href="index.php">D.B.</a></h1>
+          <div class="navigation-container">
+            <button id="main-nav-button">
+              <img
+                id="main-nav-button_img"
+                src="img/icon-hamburger.svg"
+                alt="mobile navigation menu button"
+              />
+            </button>
+            <!-- Main NAvigation -->
+            <nav class="main-navigation">
+              <a class="main-nav__portfolio navbarbtn" href="portfolio.html"
+                >portfolio</a
+              >
+              <a class="main-nav__about navbarbtn" href="about.html">about</a>
+              <a class="main-nav__contact navbarbtn" href="about.html#contact"
+                >contact</a
+              >
+            </nav>
+            <!-- Main NAvigation END -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Header END -->
+    <main>
+      <!-- Intro Section -->
+      <section class="intro-section">
+        <!-- Intro Section Text Wrapper -->
+        <div class="intro-section__text-wrapper">
+          <h4>frontend developer</h4>
+          <h2>Dejan Budanovic</h2>
+          <p>
+            I'm a Serbia based web developer that specializes in front-end
+            development
+          </p>
+        </div>
+        <!-- Intro Section Text Wrapper END-->
+        <!-- Intro Section Work Wrapper -->
+        <div class="intro-section__work-wrapper">
+          <!-- DISPLAYED THROUGH JS -->
+        </div>
+        <!-- Intro Section Work Wrapper END -->
+      </section>
+      <!-- Intro Section END -->
+      <!-- Portfolio Section -->
+      <section class="portfolio-section">
+        <h2>My portfolio</h2>
+        <!-- DISPLAYED THROUGH JS -->
+        <div class="portfolio-section__view-all">
+          <h4><a href="portfolio.html">View all</a></h4>
+          <img src="./img/arrow-right.svg" alt="right arrow" />
+          <span id="incomplete-circle"></span>
+        </div>
+        <!--Portfolio Section View All END -->
+      </section>
+      <!-- Portfolio Section END -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- Footer Navigation -->
+      <div class="main-footer__navigation">
+        <a href="portfolio.php">portfolio</a>
+        <a href="about.php">about</a>
+        <a href="about.php#contact">contact</a>
+      </div>
+      <!-- Footer Navigation END -->
+      <div class="main-footer__bottom">
+        <small>&copy; 2022 by <a href="#">dejanbudanovic.com</a></small>
+        <div class="main-footer__bottom--back-to-top">
+          <img src="./img/arrow-up-short.svg" alt="" />
+          <button onclick="backToTop()">back to top</button>
+        </div>
+      </div>
+      <!-- Back To Top Button -->
+      <button id="back-to-top--btn">
+        <img src="./img/arrow-up-short.svg" alt="" />
+      </button>
+      <!-- Back To Top Button END -->
+    </footer>
+    <!-- Main Footer END -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

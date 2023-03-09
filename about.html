@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejan Budanovic | About/Contact</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body id="about">
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header-container">
+          <h1 id="logo"><a href="index.php">D.B.</a></h1>
+          <div class="navigation-container">
+            <button id="main-nav-button">
+              <img
+                id="main-nav-button_img"
+                src="img/icon-hamburger.svg"
+                alt="mobile navigation menu button"
+              />
+            </button>
+            <!-- Main NAvigation -->
+            <nav class="main-navigation">
+              <a class="main-nav__portfolio navbarbtn" href="portfolio.html"
+                >portfolio</a
+              >
+              <a class="main-nav__about navbarbtn" href="about.html">about</a>
+              <a class="main-nav__contact navbarbtn" href="about.html#contact"
+                >contact</a
+              >
+            </nav>
+            <!-- Main NAvigation END -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Header END -->
+    <main>
+      <!-- About Section -->
+      <section class="about-page__about-section">
+        <div class="about-page__about-section--header">
+          <div class="about-page__about-section--header__text-holder">
+            <h2>Dejan Budanovic</h2>
+            <p>Web Developer</p>
+          </div>
+          <div class="about-page__about-section--header__arrow-holder">
+            <img src="./img/arrow-right.svg" alt="right arrow" />
+            <span id="incomplete-circle"></span>
+          </div>
+        </div>
+        <div class="about-page__about-section--main">
+          <div class="about-page__about-section--main__text-wrapper">
+            <h3>short summary</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              facere porro, totam velit magni tempore ad, itaque deleniti
+              dolores nisi quod qui autem sit, perspiciatis unde hic quis
+              mollitia? Porro est deserunt vel maiores harum nemo dolorum odit
+              tempora officia rerum ut doloremque, nisi, autem cum fugiat
+              perspiciatis velit. Distinctio?
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Asperiores expedita adipisci similique ipsum molestiae, quaerat
+              reiciendis! Hic eius sit natus quam incidunt exercitationem
+              officia libero, aut iure? Aspernatur vel laborum explicabo et,
+              ratione ex atque odit eius, voluptate exercitationem tempora
+              blanditiis dolorum facere rerum, assumenda fugit tenetur beatae?
+              Illum inventore sequi velit debitis quisquam adipisci possimus
+              fuga accusamus modi dolor.
+            </p>
+          </div>
+          <div class="about-page__about-section--main__image-wrapper">
+            <img
+              src="/img/desktop/dejan-budanovic-portfolio-image.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="about-page__about-section--info">
+          <div class="about-page__about-section--info__education-wrapper">
+            <h3>Education</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, in? Porro voluptates enim quas sunt placeat nisi
+              dignissimos, vel esse.
+            </p>
+          </div>
+          <div class="about-page__about-section--info__skills-wrapper">
+            <h3>skills</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Assumenda, in? Porro voluptates enim quas sunt placeat nisi
+              dignissimos, vel esse.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About Section END -->
+      <!-- Conatct Section -->
+      <div class="about-page__contact-section">
+        <div class="about-page__contact-section--header">
+          <h2>Conatct me</h2>
+          <p>feel free to contact me for future work</p>
+        </div>
+
+        <div id="contact" class="about-page__contact-section--form-wrapper">
+          <div class="alert alert-success" style="display: none">
+            <strong>Thank you!</strong> Your message has been successfully sent.
+            I will contact you soon!
+          </div>
+          <!-- Contatct Form -->
+          <form action="_send-email.php" method="post" id="contact-form">
+            <div class="form-group">
+              <label for="SenderName">Name <span>*</span></label>
+              <input
+                type="text"
+                name="SenderName"
+                class="form-control"
+                id="SenderName"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="SenderEmail">E-mail <span>*</span></label>
+              <input
+                type="email"
+                name="SenderEmail"
+                class="form-control"
+                id="SenderEmail"
+                required
+              />
+            </div>
+            <div class="form-group" id="conatct-form__textarea">
+              <label for="SenderMessage"
+                >Leave me a message... <span>*</span></label
+              >
+              <textarea
+                name="SenderMessage"
+                id="SenderMessage"
+                class="form-control"
+                cols="1"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <div
+                class="g-recaptcha"
+                data-sitekey="6Lf0ghsjAAAAAOBEaFhh9rD47dA8W8k36dWIaDpm"
+                data-theme="dark"
+                data-callback="btnEnable"
+                data-size="normal"
+                ;
+              ></div>
+            </div>
+
+            <button class="submit-btn" type="submit" disabled>Submit</button>
+          </form>
+          <!-- Contatct Form END -->
+        </div>
+      </div>
+      <!-- Conatct Section END -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- Footer Navigation -->
+      <div class="main-footer__navigation">
+        <a href="portfolio.php">portfolio</a>
+        <a href="about.php">about</a>
+        <a href="about.php#contact">contact</a>
+      </div>
+      <!-- Footer Navigation END -->
+      <div class="main-footer__bottom">
+        <small>&copy; 2022 by <a href="#">dejanbudanovic.com</a></small>
+        <div class="main-footer__bottom--back-to-top">
+          <img src="./img/arrow-up-short.svg" alt="" />
+          <button onclick="backToTop()">back to top</button>
+        </div>
+      </div>
+      <!-- Back To Top Button -->
+      <button id="back-to-top--btn">
+        <img src="./img/arrow-up-short.svg" alt="" />
+      </button>
+      <!-- Back To Top Button END -->
+    </footer>
+    <!-- Main Footer END -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

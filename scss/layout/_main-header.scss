@@ -1,0 +1,91 @@
+@use "../util" as u;
+.main-header {
+  border-bottom: 2px solid var(--beige);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: u.rem(30) 0;
+  transition: background ease-in-out 0.1s;
+  z-index: 10;
+  .main-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #logo {
+      font-size: u.rem(20);
+      z-index: 10;
+    }
+    .navigation-container {
+      display: flex;
+      flex-direction: row-reverse;
+      #main-nav-button {
+        background: transparent;
+        display: none;
+        height: u.rem(35);
+        width: u.rem(35);
+        padding: 0;
+        margin: 0;
+        filter: brightness(0) saturate(100%) invert(84%) sepia(3%)
+          saturate(994%) hue-rotate(324deg) brightness(120%) contrast(93%);
+        cursor: pointer;
+        border: none;
+        z-index: 10;
+        .closeBtn {
+          content: url("/img/icon-close.svg");
+        }
+      }
+      .main-navigation {
+        height: fit-content;
+        a {
+          font-size: u.rem(15);
+          margin: 0 0 0 u.rem(20);
+        }
+      }
+    }
+  }
+  //699.98.px
+  @include u.breakpoint-down(small) {
+    padding: u.rem(20) 0;
+    max-width: 100vw;
+    // position: static;
+    // top: 20px;
+    .main-header-container {
+      #logo {
+        font-size: u.rem(20);
+        line-height: 1;
+      }
+      .navigation-container {
+        #main-nav-button {
+          display: inline-block;
+        }
+        .main-navigation {
+          position: fixed;
+          top: u.rem(-30);
+          right: -100vw;
+          background-color: var(--dark-blue);
+          width: 100vw;
+          height: calc(100vh + u.rem(30));
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: u.rem(100);
+          transition: right ease-in-out 0.3s;
+          a {
+            margin: u.rem(20);
+            font-size: u.rem(20);
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity ease-in-out 0.5s 0.3s, color ease-in-out 0.3s;
+          }
+        }
+        .main-navigation_show {
+          right: u.rem(0);
+          overflow: hidden;
+          a {
+            opacity: 100;
+          }
+        }
+      }
+    }
+  }
+}

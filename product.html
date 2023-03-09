@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dejan Budanovic | Product</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+  <body id="product">
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header-container">
+          <h1 id="logo"><a href="index.php">D.B.</a></h1>
+          <div class="navigation-container">
+            <button id="main-nav-button">
+              <img
+                id="main-nav-button_img"
+                src="img/icon-hamburger.svg"
+                alt="mobile navigation menu button"
+              />
+            </button>
+            <!-- Main NAvigation -->
+            <nav class="main-navigation">
+              <a class="main-nav__portfolio navbarbtn" href="portfolio.html"
+                >portfolio</a
+              >
+              <a class="main-nav__about navbarbtn" href="about.html">about</a>
+              <a class="main-nav__contact navbarbtn" href="about.html#contact"
+                >contact</a
+              >
+            </nav>
+            <!-- Main NAvigation END -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Header END -->
+    <main>
+      <!-- Product Section -->
+      <section class="product-page__section"></section>
+      <!-- Product Section END -->
+      <!-- Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <img class="close" src="/img/icon-close.svg" alt="" />
+
+          <img class="modal-img" src="" alt="" />
+        </div>
+      </div>
+      <!-- Modal END -->
+    </main>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <!-- Footer Navigation -->
+      <div class="main-footer__navigation">
+        <a href="portfolio.php">portfolio</a>
+        <a href="about.php">about</a>
+        <a href="about.php#contact">contact</a>
+      </div>
+      <!-- Footer Navigation END -->
+      <div class="main-footer__bottom">
+        <small>&copy; 2022 by <a href="#">dejanbudanovic.com</a></small>
+        <div class="main-footer__bottom--back-to-top">
+          <img src="./img/arrow-up-short.svg" alt="" />
+          <button onclick="backToTop()">back to top</button>
+        </div>
+      </div>
+      <!-- Back To Top Button -->
+      <button id="back-to-top--btn">
+        <img src="./img/arrow-up-short.svg" alt="" />
+      </button>
+      <!-- Back To Top Button END -->
+    </footer>
+    <!-- Main Footer END -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+<!--    
+
+<div class="product-page__text-wrapper">
+    <h2>Loopstudios</h2>
+    <div class="product-page__text-wrapper--description-wrapper">
+      <div>
+        <h4>Role</h4>
+        <p>Lorem ipsum</p>
+        <h4>Description</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Inventore quis pariatur, quisquam, corrupti modi provident non
+          beatae soluta dolorem recusandae error quod debitis! Minima
+          temporibus illo blanditiis debitis ullam dolorem perspiciatis
+          asperiores esse nam, atque odio soluta, doloribus aspernatur
+          numquam totam eos aperiam ut cumque, autem vero tempora delectus
+          maiores!
+        </p>
+      </div>
+      <div>
+        <h4>Year</h4>
+        <p>2022</p>
+        <h4>View site</h4>
+        <a href="dejanbudanovic.com/loopstudios">Site</a>
+        <h4>View github</h4>
+        <a
+          href="https://github.com/Dejan-Budanovic/Loopstudios-landing-page"
+          >Github</a
+        >
+      </div>
+    </div>
+  </div>
+  <div class="product-page__text-wrapper--image-wrapper">
+    <div class="product-img-desktop">
+      <img
+        src="/img/desktop/loopstudios-desktop-preview.jpg"
+        alt="${product-name}"
+        onclick="showModal(this)"
+      />
+    </div>
+    <div class="product-img-mobile">
+      <img
+        src="/img/mobile/loopstudios-mobile-preview.jpg"
+        alt="${product-name}"
+        onclick="showModal(this)"
+      />
+    </div>
+  </div>
+
+  <div class="product-page__text-wrapper--button-wrapper">
+    <div id="left-arrow" class="arrow-wrapper">
+      <div class="arrow-holder">
+        <img src="./img/arrow-left.svg" alt="left arrow" />
+        <span id="incomplete-circle"></span>
+      </div>
+      <h4
+        class="switchProductBtn"
+        onclick="switchProduct('-1')"
+        type="button"
+        tabindex="0"
+      >
+        Previous game
+      </h4>
+    </div>
+    <div id="right-arrow" class="arrow-wrapper">
+      <h4
+        class="switchProductBtn"
+        onclick="switchProduct(+1)"
+        type="button"
+        tabindex="0"
+      >
+        Next game
+      </h4>
+      <div class="arrow-holder">
+        <img src="./img/arrow-right.svg" alt="right arrow" />
+        <span id="incomplete-circle"></span>
+      </div>
+    </div>
+  </div>
+
+
+
+-->

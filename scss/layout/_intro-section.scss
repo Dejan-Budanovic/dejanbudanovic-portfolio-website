@@ -1,0 +1,152 @@
+@use "../util" as u;
+
+.intro-section {
+  height: 100vh;
+  background-image: url("/img/desktop/cover-image-2.jpg");
+  background-color: rgba(1, 1, 39, 0.5);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  //transition: background-image ease-in 3s;
+  padding: u.rem(150) u.rem(40) u.rem(50);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //border: 1px solid red;
+  .intro-section__text-wrapper {
+    padding-right: 50vw;
+    h2 {
+      font-size: clamp(u.rem(30), 8vw, u.rem(150));
+      text-transform: uppercase;
+      font-style: italic;
+    }
+    h4 {
+      font-size: clamp(20px, u.rem(30), u.rem(50));
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    p {
+      font-size: clamp(u.rem(15), u.rem(20));
+    }
+  }
+  .intro-section__work-wrapper {
+    display: flex;
+    gap: u.rem(20);
+    align-items: center;
+    .intro-section__work-wrapper--img-wrapper {
+      width: 20vw;
+      border-radius: u.rem(15);
+      overflow: hidden;
+      box-shadow: 10px 11px 25px 0px rgba(0, 0, 0, 0.88);
+      height: u.rem(200);
+      img {
+        object-fit: cover;
+      }
+    }
+    .intro-section__work-wrapper--text-wrapper {
+      h3 {
+        font-size: u.rem(20);
+      }
+      p {
+        font-size: u.rem(20);
+        text-transform: capitalize;
+      }
+      a {
+        text-transform: none;
+      }
+      .intro-section__work-wrapper--text-wrapper-arrow-holder {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: u.rem(40);
+        a {
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        img {
+          display: inline;
+          width: u.rem(40);
+          filter: invert(92%) sepia(16%) saturate(3382%) hue-rotate(18deg)
+            brightness(107%) contrast(104%);
+          margin-right: -30px;
+        }
+        #incomplete-circle {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          border: 2px solid white;
+          //border-left-color: transparent;
+        }
+        #incomplete-circle::after {
+          height: 10px;
+          width: 10px;
+          display: block;
+          content: "";
+          background-color: var(--dark-blue);
+          margin-top: 13px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+}
+
+@include u.breakpoint-down(small) {
+  .intro-section {
+    padding: u.rem(150) u.rem(40) u.rem(50);
+    background-image: url("/img/mobile/cover-image-2.jpg");
+    .intro-section__text-wrapper {
+      padding-right: 0;
+      h2 {
+        font-size: clamp(u.rem(30), 8vw, u.rem(150));
+      }
+      h4 {
+        font-size: u.rem(20);
+      }
+      p {
+        font-size: clamp(u.rem(15), u.rem(20));
+      }
+    }
+    .intro-section__work-wrapper {
+      .intro-section__work-wrapper--img-wrapper {
+        height: u.rem(130);
+        width: 30vw;
+      }
+      .intro-section__work-wrapper--text-wrapper {
+        h3 {
+          font-size: u.rem(15);
+        }
+        p {
+          font-size: u.rem(15);
+        }
+        a {
+          text-transform: none;
+        }
+        .intro-section__work-wrapper--text-wrapper-arrow-holder {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: u.rem(30);
+          a {
+            margin-right: 10px;
+            font-size: 15px;
+          }
+          img {
+            width: u.rem(23);
+            margin-right: -20px;
+          }
+          #incomplete-circle {
+            height: 30px;
+            width: 30px;
+          }
+          #incomplete-circle::after {
+            height: 10px;
+            width: 10px;
+            margin-top: 8.5px;
+            margin-left: -3px;
+          }
+        }
+      }
+    }
+  }
+}
